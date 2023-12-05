@@ -1,0 +1,42 @@
+.second_line {
+  padding-top: 20px;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+
+.city {
+  color: black;
+  font-size: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.site_title{
+  font-size: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-block;
+  color: #C562FF;
+}
+
+.search {
+  border: 1px solid #CACFD2;
+  border-radius: 1px;
+  width: 800px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.search_field {
+  font-size: 22px;
+  color: grey;
+  padding: 5px 5px;
+  display: inline-block;
+}
+
+[class="fas fa-search"] {
+  padding: 5px 5px 5px 700px;
+  color: #CACFD2;
+  display: inline-block;
+}

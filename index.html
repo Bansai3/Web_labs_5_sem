@@ -6,65 +6,84 @@
     <meta name="description" content="Online mattress store">
     <mate name="keywords" content="HTML">
     <meta name="author" content="Vadim Fedotov">
-    <link href="style.css" rel="stylesheet">
+    <link href="style_sheets/body_style.css" rel="stylesheet">
+    <link href="style_sheets/head_first_line_style.css" rel="stylesheet">
+    <link href="style_sheets/head_second_line_style.css" rel="stylesheet">
+    <link href="style_sheets/footer_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Интернет магазин матрасов</title>
   </head>
   <body>
     <header>
-      <h1 align="center">Мир матрасов</h1>
-      <pre align="center">
-      \                    /|\        /|
-       \                  / | \      / |
-        \                /  |  \    /  |
-         \      /\      /   |   \  /   |
-          \    /  \    /    |    \/    |
-           \  /    \  /     |          |
-            \/      \/      |          |
-      </pre>
-      <nav align="center"><h2>Акции | Матрасы | Кровати | Кресла и диваны | Мебель</h2></nav>
-      <section align="center"><h3>Поле для поиска информации</h3></section>
+        <div class="first_line">
+          <div class="about_factory">О фабрике</div>
+          <div class="info_for_customers">Покупателям</div>
+          <div class="info_for_partners">Партнерам</div>
+          <div class="shops">Магазины</div>
+          <i class="fas fa-phone"></i>
+          <div class="phone_number">666-66-66</div>
+          <div class="order_call">Заказать звонок</div>
+          <i class="fas fa-user"></i>
+          <div class="entry">Войти</div>
+          <div class="register">Зарегистрироваться</div>
+        </div>
+        <div class="line"></div>
+      <div class="second_line">
+        <div class="site_title">Мир матрасов</div>
+        <div class="city">Санкт-Петербург</div>
+        <div class="search">
+          <div class="search_field">Поиск</div>
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
     </header>
       <main>
-        <article><p>На нашем сайте вы сможете найти очень качественные матрасы,
-                    кровати, кресла, диваны и другую мебель по разумной цене.</p>
-                  <p>Выбирайте Мир матрасов и не выбирайте вообще!</p>
-        </article>
-        <aside>
-          <p><h3>Специальное предложение:<h3><p>
-            <p><h4>Купи два матрас получи скидку на следующую покупку 15%<h4><p>
-        </aside>
-        <article>
-          <h3>Список матрасов по популярности:</h3>
-          <ol>
-            <li>Матрас Promtex Rest Standart</li>
-            <li>Матрас Promtex Soft 18 Standart Combi 1</li>
-            <li>Матрас Promtex Soft Standart M</li>
-          </ol>
-        </article>
-        <section>
-        <pre><code>
-          while(true) {
-            console.log('World of mattresses is the best!');
-          }
-        </code></pre>
-        </section>
-        <section>
-          <h3>Цитата:</h3>
-          <em>Успех — это когда ты девять раз упал, но десять раз поднялся.</em> <strong>Джон Бон Джови</strong>
-        </section>
-        <section>
-          <h3>Формула успеха:</h3>
-            <h4><del>Мотивация<sup>2</sup></del> + <ins>Саморазвитие<sup>2</sup></ins> + Цель<sup>2</sup> = Успех<sup>2</sup></h4>
-        </section>
+        <nav class="sections">
+          <div class="actions">Акции</div>
+          <div class="mattresses">Матрасы</div>
+          <div class="chairs">Кресла</div>
+          <div class="sofas">Диваны</div>
+          <div class="furniture">Мебель</div>
+        </nav>
+        <div class="gallery">
+          <figure>
+            <img src="images/Kantri-5.jpg" alt="Kantri-5 mattress">
+            <figcaption>матрасс "Кантри-5"</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Barin.jpg" alt="Barin mattress">
+            <figcaption>матрасс "Барин"</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Bounty_Comfort.jpg" alt="Bounty_Comfort mattress">
+            <figcaption>матрасс "Баунти комфорт"</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Comfort_Light.jpg" alt="Comfort_Light mattress">
+            <figcaption>матрасс "Комфорт лайт"</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Exclusive_Relax.jpg" alt="Exclusive_Relax mattress">
+            <figcaption>матрасс "Экслюзивный релакс"</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Exclusive_Positive.jpg" alt="Exclusive_Positive mattress">
+            <figcaption>матрасс "Экслюзивный позитив"</figcaption>
+          </figure>
+        </div>
       </main>
       <footer>
-        <section>
-          <h3>Контактная информация</h3>
-          <ul>
-            <li>Телефон: 6-666-666-66-66</li>
-            <li>E-mail: WorldOfMatrasses@mail.ru</li>
-          </ul>
-        </section>
+        <div class="line"></div>
+        <h3 class="contact information">Контактная информация:</h3>
+        <ul>
+          <li>
+            <i class="fas fa-phone"></i>
+            <div class="phone_number">Телефон: 666-66-66</div>
+          </li>
+          <li>
+            <div class="mail">E-mail: WorldOfMatrasses@mail.ru</div>
+          </li>
+        </ul>
       </footer>
   </body>
 </html>

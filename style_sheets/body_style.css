@@ -1,0 +1,44 @@
+.sections{
+  text-align: center;
+}
+
+.actions, .mattresses, .chairs, .sofas, .furniture{
+  border: 1px solid #C562FF;
+  border-radius: 3px;
+  color: black;
+  font-size: 18px;
+  font-family: "Times New Roman", serif;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 65px;
+  padding: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.gallery {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+figure {
+  margin: 30px;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 17px;
+  padding: 60px 20px;
+}
