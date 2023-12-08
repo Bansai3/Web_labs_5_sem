@@ -16,18 +16,28 @@
   <body>
     <header>
         <div class="first_line">
-          <div class="about_factory">О фабрике</div>
-          <div class="info_for_customers">Покупателям</div>
-          <div class="info_for_partners">Партнерам</div>
-          <div class="shops">Магазины</div>
-          <i class="fas fa-phone"></i>
-          <div class="phone_number">666-66-66</div>
-          <div class="order_call">Заказать звонок</div>
-          <i class="fas fa-user"></i>
-          <div class="entry">Войти</div>
-          <div class="register">Зарегистрироваться</div>
+          <div class="company_section">
+            <div class="about_factory">О фабрике</div>
+            <div class="info_for_customers">Покупателям</div>
+            <div class="info_for_partners">Партнерам</div>
+            <div class="shops">Магазины</div>
+          </div>
+          <div class="phone_section">
+              <div class="phone">
+                <i class="fas fa-phone"></i>
+                <div class="phone_number">666-66-66</div>
+              </div>
+              <div class="order_call">Заказать звонок</div>
+          </div>
+          <div class="register_section">
+            <div class="entry_section">
+              <i class="fas fa-user"></i>
+              <div class="entry">Войти</div>
+            </div>
+            <div class="register">Зарегистрироваться</div>
         </div>
-        <div class="line"></div>
+        </div>
+        <div class="head_body_line"></div>
       <div class="second_line">
         <div class="site_title">Мир матрасов</div>
         <div class="city">Санкт-Петербург</div>
@@ -71,14 +81,18 @@
             <figcaption>матрасс "Экслюзивный позитив"</figcaption>
           </figure>
         </div>
+        <div id="grid-table"></div>
+        <script src="js/create_table.js"></script>
       </main>
       <footer>
-        <div class="line"></div>
-        <h3 class="contact information">Контактная информация:</h3>
-        <ul>
+        <div class="body_footer_line"></div>
+        <h3 class="contact_information">Контактная информация:</h3>
+        <ul class="contact_data">
           <li>
-            <i class="fas fa-phone"></i>
-            <div class="phone_number">Телефон: 666-66-66</div>
+            <div class="contact_phone">
+              <i class="fas fa-phone"></i>
+              <div class="phone_info">Телефон: 666-66-66</div>
+            </div>
           </li>
           <li>
             <div class="mail">E-mail: WorldOfMatrasses@mail.ru</div>

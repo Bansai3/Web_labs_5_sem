@@ -2,17 +2,27 @@
   color: black;
   font-size: 17px;
   font-weight: bold;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
-li {
-  margin-bottom: 10px;
-}
-
-
-[class="contact information"] {
+.contact_information{
   padding-top: 10px;
   padding-left: 20px;
+}
+
+.phone_info {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.contact_data {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_phone {
+  display: flex;
+}
+
+.footer {
+  position: absolute;
 }

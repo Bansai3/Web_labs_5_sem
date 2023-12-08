@@ -1,42 +1,81 @@
-.second_line {
-  padding-top: 20px;
-  text-align: left;
-  font-family: "Times New Roman", serif;
+@media screen and (max-width: 992px) {
+  .second_line {
+    padding-top: 20px;
+    font-family: "Times New Roman", serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .site_title {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    font-size: 36px;
+    color: #C562FF;
+    margin-bottom: 30px;
+  }
+
+  .city {
+    align-self: center;
+    display: flex;
+    color: black;
+    font-size: 18px;
+    flex-basis: 30%;
+    justify-content: center;
+  }
+
+  .search {
+    display: flex;
+    border: 1px solid #CACFD2;
+    border-radius: 1px;
+    flex-basis: 60%;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+
 }
 
-.city {
-  color: black;
-  font-size: 24px;
-  padding-right: 20px;
-  padding-left: 20px;
-  display: inline-block;
-}
+@media screen and (min-width: 993px) {
+  .second_line {
+    padding-top: 20px;
+    font-family: "Times New Roman", serif;
+    display: flex;
+    justify-content: space-around;
+  }
 
-.site_title{
-  font-size: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
-  display: inline-block;
-  color: #C562FF;
-}
+  .site_title {
+    font-size: 36px;
+    color: #C562FF;
+  }
 
-.search {
-  border: 1px solid #CACFD2;
-  border-radius: 1px;
-  width: 800px;
-  display: inline-block;
-  margin-left: 20px;
+  .city {
+    align-self: center;
+    color: black;
+    font-size: 18px;
+  }
+  .search {
+    display: flex;
+    border: 1px solid #CACFD2;
+    border-radius: 1px;
+    flex-basis: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .search_field {
-  font-size: 22px;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 10%;
+  font-size: 18px;
   color: grey;
-  padding: 5px 5px;
-  display: inline-block;
 }
 
 [class="fas fa-search"] {
-  padding: 5px 5px 5px 700px;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 5%;
   color: #CACFD2;
-  display: inline-block;
 }
