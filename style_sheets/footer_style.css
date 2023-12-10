@@ -1,17 +1,20 @@
-.mail {
-  color: black;
-  font-size: 17px;
+.contact_information_section, .load_time_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid #C562FF;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.contact_information, .load_time_information {
+  font-size: 20px;
   font-weight: bold;
 }
 
-.contact_information{
-  padding-top: 10px;
-  padding-left: 20px;
-}
-
-.phone_info {
-  font-size: 17px;
-  font-weight: bold;
+.load_time_information {
+  margin-bottom: 10px;
 }
 
 .contact_data {
@@ -21,8 +24,23 @@
 
 .contact_phone {
   display: flex;
+  justify-content: space-between;
+  width: 68%;
+  margin-bottom: 10px;
+}
+
+.footer_section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer {
   position: absolute;
+}
+
+#load_time {
+  text-align: center;
 }

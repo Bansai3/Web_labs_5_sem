@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
@@ -6,10 +5,10 @@
     <meta name="description" content="Online mattress store">
     <mate name="keywords" content="HTML">
     <meta name="author" content="Vadim Fedotov">
-    <link href="style_sheets/body_style.css" rel="stylesheet">
-    <link href="style_sheets/head_first_line_style.css" rel="stylesheet">
-    <link href="style_sheets/head_second_line_style.css" rel="stylesheet">
-    <link href="style_sheets/footer_style.css" rel="stylesheet">
+    <link href="../style_sheets/body_style.css" rel="stylesheet">
+    <link href="../style_sheets/head_first_line_style.css" rel="stylesheet">
+    <link href="../style_sheets/head_second_line_style.css" rel="stylesheet">
+    <link href="../style_sheets/footer_style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script>
       window.addEventListener('load',
@@ -27,13 +26,13 @@
     <header>
         <div class="first_line">
           <div class="company_section">
-            <a href="company_section_pages/about_factory_page.html"
+            <a href="../company_section_pages/about_factory_page.html"
             class="first_line_navigation_button">О фабрике</a>
-            <a href="company_section_pages/info_for_customers_page.html"
+            <a href="../company_section_pages/info_for_customers_page.html"
             class="first_line_navigation_button">Покупателям</a>
-            <a href="company_section_pages/info_for_partners_page.html"
+            <a href="../company_section_pages/info_for_partners_page.html"
             class="first_line_navigation_button">Партнерам</a>
-            <a href="company_section_pages/shops_page.html"
+            <a href="../company_section_pages/shops_page.html"
             class="first_line_navigation_button">Магазины</a>
           </div>
           <div class="phone_section">
@@ -63,30 +62,59 @@
     </header>
       <main>
         <nav class="sections">
-          <a href="types_of_mattresses_pages/recommended_mattresses_page.html"
-          class="second_line_navigation_button">Рекомендуемые</a>
-          <a href="types_of_mattresses_pages/springless_mattresses_page.html"
+          <a href="../types_of_mattresses_pages/recommended_mattresses_page.html"
+          class="second_line_navigation_button" style="background-color: #D997FF;">Рекомендуемые</a>
+          <a href="../types_of_mattresses_pages/springless_mattresses_page.html"
           class="second_line_navigation_button">Беспружинные</a>
-          <a href="types_of_mattresses_pages/children_mattresses_page.html"
+          <a href="../types_of_mattresses_pages/children_mattresses_page.html"
           class="second_line_navigation_button">Десткие матрасы</a>
-          <a href="types_of_mattresses_pages/bonel_spring_unit_mattresses_page.html"
+          <a href="../types_of_mattresses_pages/bonel_spring_unit_mattresses_page.html"
           class="second_line_navigation_button">С зависимым пружинным блоком Боннель</a>
-          <a href="types_of_mattresses_pages/independent_spring_unit_mattresses_page.html"
+          <a href="../types_of_mattresses_pages/independent_spring_unit_mattresses_page.html"
           class="second_line_navigation_button">С независимым блоком пружин</a>
-          <a href="types_of_mattresses_pages/major_league_mattresses_page.html"
+          <a href="../types_of_mattresses_pages/major_league_mattresses_page.html"
           class="second_line_navigation_button">Высшая лига</a>
         </nav>
-        <div class="main_page_gallery">
-            <img style="display: flex;" class="main_page_image" src="main_page_images/mattress.jpg" alt="mattress">
-            <div class="main_page_content">
-              <span style="color: #C562FF; display: flex">M</span>
-              <span style="color: black; display: flex">M</span></div>
-            <img style="display: flex;" class="main_page_image" src="main_page_images/mattress.jpg" alt="mattress">
+        <div class="gallery">
+          <figure>
+            <img src="../types_of_mattresses_pages/images/recommended/Kantri-5.jpg" alt="Kantri-5">
+            <figcaption>матрасс "Кантри-5"</figcaption>
+          </figure>
+          <figure>
+            <img src="../types_of_mattresses_pages/images/recommended/Barin.jpg" alt="Barin">
+            <figcaption>матрасс "Барин"</figcaption>
+          </figure>
+          <figure>
+            <img src="../types_of_mattresses_pages/images/recommended/Bounty_Comfort.jpg"
+            alt="Bounty_Comfort">
+            <figcaption>матрасс "Баунти комфорт"</figcaption>
+          </figure>
+          <figure>
+            <img src="../types_of_mattresses_pages/images/recommended/Comfort_Light.jpg"
+            alt="Comfort_Light">
+            <figcaption>матрасс "Комфорт лайт"</figcaption>
+          </figure>
+          <figure>
+            <img src="../types_of_mattresses_pages/images/recommended/Exclusive_Relax.jpg"
+            alt="Exclusive_Relax">
+            <figcaption>матрасс "Экслюзивный релакс"</figcaption>
+          </figure>
+          <figure>
+            <img src="../types_of_mattresses_pages/images/recommended/Exclusive_Positive.jpg"
+            alt="Exclusive_Positive">
+            <figcaption>матрасс "Экслюзивный позитив"</figcaption>
+          </figure>
         </div>
-        <div class="body_footer_line"></div>
+        <div class="table">
+        <div class="table_frame">
+          <div id="grid-table"></div>
+          <script src="js/create_table.js"></script>
+        </div>
+      </div>
+      <div class="body_footer_line"></div>
       </main>
       <footer>
-        <div class="footer_section" style="margin-top: 60px;">
+        <div class="footer_section">
         <div class="contact_information_section">
           <div class="contact_information">Контактная информация:</div>
           <ul class="contact_data">
@@ -105,7 +133,7 @@
         <div class="load_time_information">Время загрузки страницы:</div>
         <div style="font-size: 18px;" id="load_time"></div>
       </div>
+      </div>
       </footer>
-    </div>
   </body>
 </html>

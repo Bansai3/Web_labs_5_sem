@@ -1,17 +1,61 @@
+@media screen and (max-width: 992px) {
+  .main_page_content {
+    font-size: 120px;
+  }
+  .second_line_navigation_button {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .main_page_content {
+    font-size: 180px;
+  }
+  .second_line_navigation_button {
+    font-size: 17px;
+  }
+}
+
 .sections{
   margin-top: 80px;
   display: flex;
   justify-content: space-around;
 }
 
-.actions, .mattresses, .chairs, .sofas, .furniture{
+a.second_line_navigation_button {
+  color: black;
+  text-decoration: none;
+}
+
+.second_line_navigation_button {
   border: 1px solid #C562FF;
   border-radius: 3px;
   color: black;
-  font-size: 18px;
   padding: 5px;
   font-family: "Times New Roman", serif;
-  font-weight: bold;
+}
+
+.second_line_navigation_button:hover{
+  border: 1px solid #C562FF;
+  border-radius: 3px;
+  color: black;
+  padding: 5px;
+  font-family: "Times New Roman", serif;
+  background-color: #FDA9FF;
+}
+
+.main_page_content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_page_gallery {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .gallery {
@@ -19,6 +63,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 figure {
@@ -37,21 +82,35 @@ img {
   height: 300px;
 }
 
+.main_page_image {
+  width: 30%;
+  height: 80%;
+}
+
 figcaption {
   font-style: italic;
   font-size: 17px;
 }
 
 .body_footer_line {
-  position: absolute;
   left: 0;
   right: 0;
   height: 1px;
+  position: absolute;
   background-color: #CACFD2;
 }
 
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+.table_frame {
+  width: 70%;
+}
+
 #grid-table {
-  margin-top: 40px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);

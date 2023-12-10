@@ -20,7 +20,6 @@
 .company_section {
   display: flex;
   justify-content: space-between;
-  color: grey;
   font-size: 16px;
   flex-basis: 35%;
 }
@@ -85,4 +84,14 @@
   right: 0;
   height: 1px;
   background-color: #CACFD2;
+}
+
+.first_line_navigation_button:hover {
+  color: #C562FF;
+  text-decoration: none;
+}
+
+a.first_line_navigation_button {
+  color: grey;
+  text-decoration: none;
 }
