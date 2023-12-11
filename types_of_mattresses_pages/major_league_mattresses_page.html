@@ -46,36 +46,46 @@
           <div class="register_section">
             <div class="entry_section">
               <i class="fas fa-user"></i>
-              <div class="entry">Войти</div>
+              <a href="../registration/sign_in_page.html" class="entry">Войти</a>
             </div>
-            <div class="register">Зарегистрироваться</div>
+            <a href="../registration/registration_page.html" class="register">Зарегистрироваться</a>
         </div>
         </div>
         <div class="head_body_line"></div>
-      <div class="second_line">
-        <div class="site_title">Мир матрасов</div>
-        <div class="city">Санкт-Петербург</div>
-        <div class="search">
-          <div class="search_field">Поиск</div>
-          <i class="fas fa-search"></i>
+        <div class="second_line">
+          <div class="site_title">Мир матрасов</div>
+          <div class="city">
+            <div class="cities">Города &bigtriangledown;</div>
+            <ul class="dropdown-content">
+              <li><a class="city_menu_option" href="#">Санкт-Петербург</a></li>
+              <li><a class="city_menu_option" href="#">Москва</a></li>
+              <li><a class="city_menu_option" href="#">Воронеж</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+            <input type="text" placeholder="Поиск" class="search_field"></input>
+          </div>
         </div>
-      </div>
     </header>
       <main>
         <nav class="sections">
           <a href="../types_of_mattresses_pages/recommended_mattresses_page.html"
-          class="second_line_navigation_button">Рекомендуемые</a>
+          class="second_line_navigation_button" id="recommended">Рекомендуемые</a>
           <a href="../types_of_mattresses_pages/springless_mattresses_page.html"
-          class="second_line_navigation_button">Беспружинные</a>
+          class="second_line_navigation_button" id="springless">Беспружинные</a>
           <a href="../types_of_mattresses_pages/children_mattresses_page.html"
-          class="second_line_navigation_button">Десткие матрасы</a>
+          class="second_line_navigation_button" id="children">Десткие матрасы</a>
           <a href="../types_of_mattresses_pages/bonel_spring_unit_mattresses_page.html"
-          class="second_line_navigation_button">С зависимым пружинным блоком Боннель</a>
+          class="second_line_navigation_button" id="bonel">С зависимым пружинным блоком Боннель</a>
           <a href="../types_of_mattresses_pages/independent_spring_unit_mattresses_page.html"
-          class="second_line_navigation_button">С независимым блоком пружин</a>
+          class="second_line_navigation_button" id="independent_spring">С независимым блоком пружин</a>
           <a href="../types_of_mattresses_pages/major_league_mattresses_page.html"
-          class="second_line_navigation_button" style="background-color: #D997FF;">Высшая лига</a>
+          class="second_line_navigation_button" id="major_league">Высшая лига</a>
         </nav>
+        <script src="../js/change_button_state.js"></script>
         <div class="gallery">
           <figure>
             <img src="../types_of_mattresses_pages/images/major_league/Etalon.jpg" alt="Etalon">

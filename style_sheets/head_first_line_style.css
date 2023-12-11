@@ -65,17 +65,19 @@
   flex-basis: 20%;
 }
 
-.entry {
+a.entry {
   color: grey;
   font-size: 16px;
+  text-decoration: none;
 }
 
-.register {
+a.register {
   display: flex;
   justify-content: space-around;
   flex-basis: 75%;
   color: grey;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .head_body_line {
@@ -94,4 +96,8 @@
 a.first_line_navigation_button {
   color: grey;
   text-decoration: none;
+}
+
+a.active_company_info {
+  color: #A100FA;
 }

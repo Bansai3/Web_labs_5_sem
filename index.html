@@ -21,20 +21,21 @@
       }
     )
     </script>
+    <script src="js/drop_down_menu.js"></script>
     <title>Интернет магазин матрасов</title>
   </head>
   <body>
     <header>
         <div class="first_line">
           <div class="company_section">
-            <a href="company_section_pages/about_factory_page.html"
-            class="first_line_navigation_button">О фабрике</a>
-            <a href="company_section_pages/info_for_customers_page.html"
-            class="first_line_navigation_button">Покупателям</a>
-            <a href="company_section_pages/info_for_partners_page.html"
-            class="first_line_navigation_button">Партнерам</a>
-            <a href="company_section_pages/shops_page.html"
-            class="first_line_navigation_button">Магазины</a>
+            <a href="../company_section_pages/about_factory_page.html"
+            class="first_line_navigation_button" id="factory">О фабрике</a>
+            <a href="../company_section_pages/info_for_customers_page.html"
+            class="first_line_navigation_button" id="customers">Покупателям</a>
+            <a href="../company_section_pages/info_for_partners_page.html"
+            class="first_line_navigation_button" id="partners">Партнерам</a>
+            <a href="../company_section_pages/shops_page.html"
+            class="first_line_navigation_button" id="shops">Магазины</a>
           </div>
           <div class="phone_section">
               <div class="phone">
@@ -46,19 +47,30 @@
           <div class="register_section">
             <div class="entry_section">
               <i class="fas fa-user"></i>
-              <div class="entry">Войти</div>
+              <a href="registration/sign_in_page.html" class="entry">Войти</a>
             </div>
-            <div class="register">Зарегистрироваться</div>
+            <a href="registration/registration_page.html" class="register">Зарегистрироваться</a>
         </div>
         </div>
         <div class="head_body_line"></div>
       <div class="second_line">
         <div class="site_title">Мир матрасов</div>
-        <div class="city">Санкт-Петербург</div>
+
+        <div class="city">
+          <div class="cities">Города &bigtriangledown;</div>
+          <ul class="dropdown-content">
+            <li><a class="city_menu_option" href="#">Санкт-Петербург</a></li>
+            <li><a class="city_menu_option" href="#">Москва</a></li>
+            <li><a class="city_menu_option" href="#">Воронеж</a></li>
+          </ul>
+        </div>
         <div class="search">
-          <div class="search_field">Поиск</div>
+          <div class="icon">
           <i class="fas fa-search"></i>
         </div>
+          <input type="text" placeholder="Поиск" class="search_field"></input>
+        </div>
+        <a href="form/form.html" class="form">Заполнить форму</a>
       </div>
     </header>
       <main>
@@ -105,7 +117,7 @@
         <div class="load_time_information">Время загрузки страницы:</div>
         <div style="font-size: 18px;" id="load_time"></div>
       </div>
+          </div>
       </footer>
-    </div>
   </body>
 </html>

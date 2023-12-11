@@ -11,6 +11,8 @@
     <link href="../style_sheets/head_second_line_style.css" rel="stylesheet">
     <link href="../style_sheets/footer_style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="../style_sheets/form.css" rel="stylesheet">
+    <script defer src="../js/handle_form_submit.js"></script>
     <script>
       window.addEventListener('load',
       function() {
@@ -21,6 +23,7 @@
       }
     )
     </script>
+    <script src="js/drop_down_menu.js"></script>
     <title>Интернет магазин матрасов</title>
   </head>
   <body>
@@ -36,7 +39,6 @@
             <a href="../company_section_pages/shops_page.html"
             class="first_line_navigation_button" id="shops">Магазины</a>
           </div>
-          <script src="../js/change_button_state.js"></script>
           <div class="phone_section">
               <div class="phone">
                 <i class="fas fa-phone"></i>
@@ -47,19 +49,40 @@
           <div class="register_section">
             <div class="entry_section">
               <i class="fas fa-user"></i>
-              <a href="../registration/sign_in_page.html" class="entry">Войти</a>
+              <a href="registration/sign_in_page.html" class="entry">Войти</a>
             </div>
-            <a href="../registration/registration_page.html" class="register">Зарегистрироваться</a>
+            <a href="registration/registration_page.html" class="register">Зарегистрироваться</a>
         </div>
         </div>
         <div class="head_body_line"></div>
     </header>
       <main>
-        <script src="../company_section_pages/scripts/about_factory_page.js"></script>
-        <div class="body_footer_line"></div>
+        <div class="task_container">
+        <div class="task_form">
+          <div class="task_input_container">
+            <form id="todoForm" class="task_input" onsubmit="handleFormSubmit(event)">
+              <img src="../form/images/bars.svg" alt="icon">
+              <input type="text" placeholder="Введите задание" />
+            </form>
+        </div>
+        <div class="controls">
+            <div class="states">
+                <span class="active" id="all">Все</span>
+                <span id="pending">В обработке</span>
+                <span id="completed">Обработанные</span>
+            </div>
+            <div class="button_container">
+            <button class="clear_button">Очистить</button>
+            </div>
+        </div>
+        <div class="divided_line"></div>
+        <div id="tasks" class="task_box"></div>
+    </div>
+    </div>
+          <div class="body_footer_line"></div>
       </main>
       <footer>
-        <div class="footer_section" style="margin-top: 80px;">
+        <div class="footer_section" style="margin-top: 60px;">
         <div class="contact_information_section">
           <div class="contact_information">Контактная информация:</div>
           <ul class="contact_data">
@@ -78,7 +101,7 @@
         <div class="load_time_information">Время загрузки страницы:</div>
         <div style="font-size: 18px;" id="load_time"></div>
       </div>
-    </div>
+          </div>
       </footer>
   </body>
 </html>

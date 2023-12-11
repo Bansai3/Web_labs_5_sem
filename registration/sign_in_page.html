@@ -28,15 +28,14 @@
         <div class="first_line">
           <div class="company_section">
             <a href="../company_section_pages/about_factory_page.html"
-            class="first_line_navigation_button" id="factory">О фабрике</a>
+            class="first_line_navigation_button">О фабрике</a>
             <a href="../company_section_pages/info_for_customers_page.html"
-            class="first_line_navigation_button" id="customers">Покупателям</a>
+            class="first_line_navigation_button">Покупателям</a>
             <a href="../company_section_pages/info_for_partners_page.html"
-            class="first_line_navigation_button" id="partners">Партнерам</a>
+            class="first_line_navigation_button">Партнерам</a>
             <a href="../company_section_pages/shops_page.html"
-            class="first_line_navigation_button" id="shops">Магазины</a>
+            class="first_line_navigation_button">Магазины</a>
           </div>
-          <script src="../js/change_button_state.js"></script>
           <div class="phone_section">
               <div class="phone">
                 <i class="fas fa-phone"></i>
@@ -55,11 +54,18 @@
         <div class="head_body_line"></div>
     </header>
       <main>
-        <script src="../company_section_pages/scripts/about_factory_page.js"></script>
+        <div class="sign_form_container">
+        <form class="sing_in">
+          <div class="sign_in_title">Вход</div>
+          <input class="sign_in_input" type="text" id="sign_in_login" placeholder="Логин">
+          <input class="sign_in_input" type="password" id="sign_in_password" placeholder="Пароль">
+          <input class="sign_in_input" type="submit" id="sign_in" value="Войти">
+        </form>
+      </div>
         <div class="body_footer_line"></div>
       </main>
       <footer>
-        <div class="footer_section" style="margin-top: 80px;">
+        <div class="footer_section" style="margin-top: 180px;">
         <div class="contact_information_section">
           <div class="contact_information">Контактная информация:</div>
           <ul class="contact_data">
@@ -78,7 +84,7 @@
         <div class="load_time_information">Время загрузки страницы:</div>
         <div style="font-size: 18px;" id="load_time"></div>
       </div>
-    </div>
+          </div>
       </footer>
   </body>
 </html>

@@ -5,6 +5,25 @@
   .second_line_navigation_button {
     font-size: 13px;
   }
+
+  #register_password, #register_login, #register_fio,
+  #register_email, #register_confirm_password {
+    font-size: 13px;
+  }
+
+  #sign_in_login, #sign_in_password {
+    font-size: 13px;
+  }
+
+  #register {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  #sign_in {
+    width: 50%;
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 993px) {
@@ -14,10 +33,28 @@
   .second_line_navigation_button {
     font-size: 17px;
   }
+  #register_password, #register_login, #register_fio,
+  #register_email, #register_confirm_password {
+    font-size: 17px;
+  }
+
+  #sign_in_login, #sign_in_password {
+    font-size: 17px;
+  }
+
+  #register {
+    width: 55%;
+    font-size: 20px;
+  }
+
+  #sign_in {
+    width: 50%;
+    font-size: 20px;
+  }
 }
 
 .sections{
-  margin-top: 80px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-around;
 }
@@ -138,4 +175,90 @@ figcaption {
 .title_cell {
   font-weight: bold;
   background-color: #CACFD2;
+}
+
+.active_mattresses_types {
+  background-color: #D997FF;
+}
+
+.sign_form_container {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  height: 400px;
+  justify-content: center;
+}
+
+.sing_in {
+  display: flex;
+  border: 3px solid #C562FF;
+  border-radius: 5px;
+  align-items: center;
+  flex-basis: 40%;
+  background-color: #F0CCF9;
+  flex-direction: column;
+}
+
+.register_form_container {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  height: 600px;
+  justify-content: center;
+}
+
+.register_account {
+  display: flex;
+  border: 3px solid #C562FF;
+  border-radius: 5px;
+  align-items: center;
+  flex-basis: 40%;
+  background-color: #F0CCF9;
+  flex-direction: column;
+}
+
+#sign_in_login, #sign_in_password {
+  width: 60%;
+  height: 35px;
+  border: 2px solid black;
+  margin-bottom: 35px;
+  border-radius: 5px;
+}
+
+ #register_password, #register_login, #register_fio,
+ #register_email, #register_confirm_password {
+   width: 60%;
+   height: 35px;
+   border: 2px solid black;
+   margin-bottom: 35px;
+   border-radius: 5px;
+ }
+
+
+#sign_in {
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+#register {
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register_title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.sign_in_title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
